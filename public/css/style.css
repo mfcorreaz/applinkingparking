@@ -1,0 +1,339 @@
+
+.logo-img {
+    width: 50px;
+    border-radius: 10px 0px 10px 0px;
+    border: 2.5px solid black;
+  }
+
+.logo-img-nav {
+    width: 45px;
+    border-radius: 10px 0px 10px 0px;
+    border: 2.5px solid rgb(12, 12, 12);
+  }
+
+  input[type="email"],
+  input[type="password"],
+  input[type="text"] {
+    border: 1px solid black;
+  }
+  
+  .navbar {
+    background-color:rgb(38, 7, 66) /* Puedes reemplazar este color con el que desees */
+  }
+
+.caca {
+  background-color: rgb(38, 7, 66);
+  
+}
+
+.topContainer{
+  padding-top: 15px;
+}
+
+.labelUser {
+  justify-content: center;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  font-size: 20px;
+  font-weight: bold;
+  color:rgb(111, 236, 100);
+  
+}
+
+.labelDashPatente {
+  display: block;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  
+  
+}
+
+.padre_patente {
+  
+    display: flex;
+    justify-content: center;
+
+}
+
+.select {
+  border-radius: 5px;
+  font-weight: bold;
+  background: rgb(218, 214, 214);
+}
+
+.select-container {
+  display: inline-block;
+  margin-right: 10px;
+  
+  /* Agregar otros estilos necesarios */
+  
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 95%;
+  gap: 10px;
+}
+
+.custom-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+  background-color: #48bb78;
+  color: white;
+  font-weight: bold;
+  border-radius: 3px;
+  text-decoration: none;
+}
+
+.center-content {
+  display: flex;
+  justify-content: center;
+}
+.center-content-estado{
+  justify-content: center;
+}
+
+/* SEPARADOR TOP-BOTTON ENTRE SI */
+.patenteContainer {
+  margin-bottom: 15px;
+}
+
+/*Boton estado*/
+.btn-estado {
+  background: rgb(241, 3, 134);
+  border: 1px solid grey;
+}
+
+.btn-billetera {
+  background-color: #777675;
+}
+
+.btn-movimientos {
+  background-color: #5f4bb6;
+}
+
+.btn-parqueadero {
+  background-color: #fcbf49;
+}
+
+   /* Estilos para el footer */
+.logo-container {
+    background-color: rgb(38, 7, 66);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+    
+}
+
+/* Estilos para el logo */
+.logo-img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilos para los párrafos */
+.promo-text,
+.asesor-text {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: white;
+}
+
+/* ICONOS FOOTER*/
+   /* Estilos para el contenedor de iconos de redes sociales */
+   .social-icons-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+/* Estilos para los iconos de redes sociales */
+.social-icon {
+    display: inline-block;
+    font-size: 24px;
+    margin: 0 10px;
+    color: #333; /* Color de los iconos */
+    text-decoration: none;
+}
+
+    /* Estilos para los iconos de redes sociales */
+    .social-icon {
+      display: inline-block;
+      margin: 0 10px 10px; /* Añadimos un margen inferior de 10px */
+      text-decoration: none;
+  }
+
+  /* Estilos para las imágenes de los iconos */
+  .social-icon img {
+      width: 24px; /* Ajustamos el ancho de los iconos */
+      height: 24px; /* Ajustamos la altura de los iconos */
+  }
+
+  
+
+  
+  .ico-btn {
+    width: 20px;
+    height: 20px;
+    color: white;
+    margin-right: 5px;
+  }
+
+
+  .btn-add {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px; /* Ajustamos el ancho del botón */
+    height: 45px; /* Ajustamos la altura del botón */
+  }
+  
+  .btn-add a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .btn-add img {
+    width: 38px;
+    height: 38px;
+  }
+
+  /* VISTA RESERVA */
+  .center-content-reservas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 15px;
+
+}
+
+.label_parqueaderos {
+    color: white;
+    font-size: 24px; /* Ajusta el tamaño de la fuente según tus preferencias */
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.select-container-reservas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    /* Agrega otros estilos necesarios */
+}
+
+.select-reservas {
+    /* Ajusta el tamaño de la fuente según tus preferencias */
+    font-size: 18px;
+    color: black; /* Cambia el color del texto del select si es necesario */
+    /* Agrega otros estilos necesarios */
+}
+
+#btn-get-location {
+  border: 1 solid blueviolet;
+  border-radius: 8px;
+  padding: 10px 10px;
+  background: #5f4bb6;
+  color: white;
+  margin-top: 20px;
+  
+}
+
+.input {
+  width: 300px;
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  background: #777675;
+}
+
+.input-separado {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+
+/*botones reserva */
+
+
+.btn-container {
+  width: 100%;
+}
+
+.btn-reservar {
+  background-color: #4ff765; /* Color azul para el botón Volver */
+  margin: 10px 0;
+  width: 100%;
+  height: 40px;
+  color: white;
+  font-weight: bold;
+  border-radius: 3px;
+  text-decoration: none;
+  /* Agrega otros estilos de diseño para el botón Volver si es necesario */
+}
+
+.btn-volver {
+  background-color: #5f4bb6; /* Color azul para el botón Volver */
+  margin: 20px 0;
+  
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+  color: white;
+  font-weight: bold;
+  border-radius: 3px;
+  text-decoration: none;
+  /* Agrega otros estilos de diseño para el botón Volver si es necesario */
+}
+
+#btnActualizar {
+  background-color: #ea9310; /* Color azul para el botón Volver */
+  margin: 10px 0;
+  
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+  color: white;
+  font-weight: bold;
+  border-radius: 3px;
+  text-decoration: none;
+  /* Agrega otros estilos de diseño para el botón Volver si es necesario */
+}
+/*ALERT ERROR EN EL DASHBOARD DE LA RESERVA*/
+
+.alert {
+  background: palevioletred;
+  padding: 3px;
+  color: white;
+  font-size: medium;
+  text-align: center;
+}
+
+.btn-volver-mov{
+  background-color: #5f4bb6; /* Color azul para el botón Volver */
+  margin: 20px 0;
+  
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+  color: white;
+  font-weight: bold;
+  border-radius: 3px;
+  text-decoration: none;
+}
