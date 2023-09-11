@@ -5,19 +5,8 @@ use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\ReservaController; // Importa el controlador si aún no lo has creado
 use App\Http\Controllers\RegistroEntradaSalidaController;
 use App\Http\Controllers\MapaController;
+use App\Http\Controllers\AgregarPlacaController;
 
-
-
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider and all of them will
-| be assigned to the "web" middleware group. Make something great!
-|
-*/
 
 Route::get('/', function () {
     return view('welcome');
@@ -51,7 +40,9 @@ Route::post('reservar', [MapaController::class, 'store'])->name('reservar.store'
 Route::post('/realizar-reserva/{vehiculo_id}/{parqueadero_id}', [MapaController::class, 'realizarReserva'])->name('realizar_reserva');
 
 
-
+Route::get('/reservar', function () {
+    return view('reservar');
+})->name('reservar');
 
 // RUTAS PARQUEADERO MOVIMEINTORutas protegidas por middleware de autenticación
 Route::middleware(['auth'])->group(function () {
@@ -74,5 +65,17 @@ Route::middleware(['auth'])->group(function () {
     // Ruta para eliminar un registro de entrada/salida
     Route::delete('/registros/{id}', [RegistroEntradaSalidaController::class, 'destroy'])->name('registros.destroy');
 });
+
+// RUTA PARA AGREGAR VEHICULO
+    Route::get('/agregar-vehiculo/{user_id}', [AgregarPlacaController::class, 'agregar_placa'])->name('agregarPlaca');
+    
+
+    
+    Route::get('/agregar-vehiculo', [AgregarPlacaController::class, 'agregar_placa'])->name('crear-vista-agregar');
+    Route::post('/guardar-vehiculo', [AgregarPlacaController::class, 'guardarVehiculo'])->name('guardar-vehiculo');
+    
+    //Ruta para mostrar la lista de los vehiculos del usuario
+    Route::get('/lista-vehiculos', [AgregarPlacaController::class, 'mostrarListaVehiculos'])->name('lista-vehiculos');
+    
 
 

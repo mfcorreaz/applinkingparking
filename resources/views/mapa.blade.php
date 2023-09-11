@@ -138,7 +138,7 @@
                 var marker = L.marker([parqueadero.latitud, parqueadero.longitud], { icon: L.icon({ iconUrl: 'https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png', iconSize: [25, 41], iconAnchor: [12, 41], popupAnchor: [1, -34], shadowSize: [41, 41] }) }).addTo(map).bindPopup(parqueadero.nombre);
                 marker.on('click', function() {
                     document.getElementById('buscar').value = parqueadero.nombre;
-                    
+                    document.getElementById('direccion').value = parqueadero.direccion;
                 });
             });
         });

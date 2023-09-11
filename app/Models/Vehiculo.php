@@ -29,10 +29,12 @@ class Vehiculo extends Model
         return $this->belongsTo(Color::class);
     }
 
+    
     public function marca()
     {
-        return $this->belongsTo(Marca::class);
+        return $this->belongsTo(Marca::class, 'marca_id');
     }
+
 
     public function modelo()
     {

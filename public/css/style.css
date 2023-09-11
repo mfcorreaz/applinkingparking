@@ -1,9 +1,13 @@
 
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
 .logo-img {
     width: 50px;
     border-radius: 10px 0px 10px 0px;
     border: 2.5px solid black;
-  }
+  } 
 
 .logo-img-nav {
     width: 45px;

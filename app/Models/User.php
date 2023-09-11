@@ -61,15 +61,21 @@ class User extends Authenticatable
     ];
 
     // Modelo User
-        public function vehiculos()
-        {
-            return $this->hasMany(VehiculosUser::class, 'user_id');
-        }
+        // public function vehiculos()
+        // {
+        //     return $this->hasMany(VehiculosUser::class, 'user_id');
+        // }
 
         // Modelo Vehiculo
         public function vehiculosUsers()
         {
             return $this->hasMany(VehiculosUser::class, 'vehiculo_id');
+        }
+
+        
+        public function vehiculos()
+        {
+            return $this->belongsToMany(Vehiculo::class, 'vehiculos_users', 'user_id', 'vehiculo_id');
         }
 
 
